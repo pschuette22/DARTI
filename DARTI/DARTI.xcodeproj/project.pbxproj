@@ -15,6 +15,8 @@
 		494565862BB9FDB00056FC15 /* TypeKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494565852BB9FDB00056FC15 /* TypeKey.swift */; };
 		494565882BB9FE580056FC15 /* SimpleTypeKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494565872BB9FE580056FC15 /* SimpleTypeKey.swift */; };
 		4945658A2BBA00A60056FC15 /* ConfiguredTypeKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494565892BBA00A60056FC15 /* ConfiguredTypeKey.swift */; };
+		4945658D2BBA05D30056FC15 /* SimpleTypeResolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4945658C2BBA05D30056FC15 /* SimpleTypeResolver.swift */; };
+		49A49EB62BBA0BD600A30939 /* ConfiguredTypeResolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A49EB52BBA0BD600A30939 /* ConfiguredTypeResolver.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +39,8 @@
 		494565852BB9FDB00056FC15 /* TypeKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeKey.swift; sourceTree = "<group>"; };
 		494565872BB9FE580056FC15 /* SimpleTypeKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleTypeKey.swift; sourceTree = "<group>"; };
 		494565892BBA00A60056FC15 /* ConfiguredTypeKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfiguredTypeKey.swift; sourceTree = "<group>"; };
+		4945658C2BBA05D30056FC15 /* SimpleTypeResolver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleTypeResolver.swift; sourceTree = "<group>"; };
+		49A49EB52BBA0BD600A30939 /* ConfiguredTypeResolver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfiguredTypeResolver.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +121,8 @@
 		4945658B2BBA02DD0056FC15 /* Resolvers */ = {
 			isa = PBXGroup;
 			children = (
+				4945658C2BBA05D30056FC15 /* SimpleTypeResolver.swift */,
+				49A49EB52BBA0BD600A30939 /* ConfiguredTypeResolver.swift */,
 			);
 			path = Resolvers;
 			sourceTree = "<group>";
@@ -231,8 +237,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				4945658A2BBA00A60056FC15 /* ConfiguredTypeKey.swift in Sources */,
+				49A49EB62BBA0BD600A30939 /* ConfiguredTypeResolver.swift in Sources */,
 				494565862BB9FDB00056FC15 /* TypeKey.swift in Sources */,
 				4945656B2BB9F7980056FC15 /* DARTI.docc in Sources */,
+				4945658D2BBA05D30056FC15 /* SimpleTypeResolver.swift in Sources */,
 				494565842BB9FD9E0056FC15 /* ConfiguredType.swift in Sources */,
 				494565882BB9FE580056FC15 /* SimpleTypeKey.swift in Sources */,
 			);
