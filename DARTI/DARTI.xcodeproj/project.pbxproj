@@ -17,6 +17,11 @@
 		4945658A2BBA00A60056FC15 /* ConfiguredTypeKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494565892BBA00A60056FC15 /* ConfiguredTypeKey.swift */; };
 		4945658D2BBA05D30056FC15 /* SimpleTypeResolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4945658C2BBA05D30056FC15 /* SimpleTypeResolver.swift */; };
 		49A49EB62BBA0BD600A30939 /* ConfiguredTypeResolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A49EB52BBA0BD600A30939 /* ConfiguredTypeResolver.swift */; };
+		49A49EBA2BBA11E500A30939 /* Registration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A49EB92BBA11E500A30939 /* Registration.swift */; };
+		49A49EBC2BBA121B00A30939 /* TypeResolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A49EBB2BBA121B00A30939 /* TypeResolver.swift */; };
+		49A49EBE2BBA141700A30939 /* RegistrationsBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A49EBD2BBA141700A30939 /* RegistrationsBuilder.swift */; };
+		49A49EC02BBA145000A30939 /* TypeRegistry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A49EBF2BBA145000A30939 /* TypeRegistry.swift */; };
+		49A49EC22BBA151800A30939 /* Initializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A49EC12BBA151800A30939 /* Initializer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +46,11 @@
 		494565892BBA00A60056FC15 /* ConfiguredTypeKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfiguredTypeKey.swift; sourceTree = "<group>"; };
 		4945658C2BBA05D30056FC15 /* SimpleTypeResolver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleTypeResolver.swift; sourceTree = "<group>"; };
 		49A49EB52BBA0BD600A30939 /* ConfiguredTypeResolver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfiguredTypeResolver.swift; sourceTree = "<group>"; };
+		49A49EB92BBA11E500A30939 /* Registration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Registration.swift; sourceTree = "<group>"; };
+		49A49EBB2BBA121B00A30939 /* TypeResolver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeResolver.swift; sourceTree = "<group>"; };
+		49A49EBD2BBA141700A30939 /* RegistrationsBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationsBuilder.swift; sourceTree = "<group>"; };
+		49A49EBF2BBA145000A30939 /* TypeRegistry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeRegistry.swift; sourceTree = "<group>"; };
+		49A49EC12BBA151800A30939 /* Initializer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Initializer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +93,7 @@
 		494565682BB9F7980056FC15 /* Package */ = {
 			isa = PBXGroup;
 			children = (
+				49A49EB72BBA105600A30939 /* Private */,
 				494565802BB9FCF90056FC15 /* Public */,
 				494565692BB9F7980056FC15 /* DARTI.h */,
 				4945656A2BB9F7980056FC15 /* DARTI.docc */,
@@ -101,8 +112,9 @@
 		494565802BB9FCF90056FC15 /* Public */ = {
 			isa = PBXGroup;
 			children = (
-				4945658B2BBA02DD0056FC15 /* Resolvers */,
+				49A49EB82BBA11CC00A30939 /* TypeRegistry */,
 				494565812BB9FD680056FC15 /* TypeKeys */,
+				49A49EC12BBA151800A30939 /* Initializer.swift */,
 			);
 			path = Public;
 			sourceTree = "<group>";
@@ -123,8 +135,27 @@
 			children = (
 				4945658C2BBA05D30056FC15 /* SimpleTypeResolver.swift */,
 				49A49EB52BBA0BD600A30939 /* ConfiguredTypeResolver.swift */,
+				49A49EBB2BBA121B00A30939 /* TypeResolver.swift */,
 			);
 			path = Resolvers;
+			sourceTree = "<group>";
+		};
+		49A49EB72BBA105600A30939 /* Private */ = {
+			isa = PBXGroup;
+			children = (
+				4945658B2BBA02DD0056FC15 /* Resolvers */,
+			);
+			path = Private;
+			sourceTree = "<group>";
+		};
+		49A49EB82BBA11CC00A30939 /* TypeRegistry */ = {
+			isa = PBXGroup;
+			children = (
+				49A49EB92BBA11E500A30939 /* Registration.swift */,
+				49A49EBD2BBA141700A30939 /* RegistrationsBuilder.swift */,
+				49A49EBF2BBA145000A30939 /* TypeRegistry.swift */,
+			);
+			path = TypeRegistry;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -236,12 +267,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49A49EBA2BBA11E500A30939 /* Registration.swift in Sources */,
+				49A49EC02BBA145000A30939 /* TypeRegistry.swift in Sources */,
 				4945658A2BBA00A60056FC15 /* ConfiguredTypeKey.swift in Sources */,
 				49A49EB62BBA0BD600A30939 /* ConfiguredTypeResolver.swift in Sources */,
 				494565862BB9FDB00056FC15 /* TypeKey.swift in Sources */,
 				4945656B2BB9F7980056FC15 /* DARTI.docc in Sources */,
 				4945658D2BBA05D30056FC15 /* SimpleTypeResolver.swift in Sources */,
 				494565842BB9FD9E0056FC15 /* ConfiguredType.swift in Sources */,
+				49A49EC22BBA151800A30939 /* Initializer.swift in Sources */,
+				49A49EBC2BBA121B00A30939 /* TypeResolver.swift in Sources */,
+				49A49EBE2BBA141700A30939 /* RegistrationsBuilder.swift in Sources */,
 				494565882BB9FE580056FC15 /* SimpleTypeKey.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
