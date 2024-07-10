@@ -32,7 +32,7 @@ public extension Initializer {
             // TODO: Compile step for symbol evaluation
             fatalError("Registration missing!", file: file, line: line)
         }
-        return typeResolver.resolve() as! T
+        return typeResolver.resolve(self) as! T
     }
 
     func initType<T, C: TypeConfiguration>(
@@ -46,6 +46,6 @@ public extension Initializer {
             //  TODO: Compile step for symbol evaluation
             fatalError("Registration missing!", file: file, line: line)
         }
-        return typeResolver.resolve(configuration) as! T
+        return typeResolver.resolve(configuration, self) as! T
     }
 }

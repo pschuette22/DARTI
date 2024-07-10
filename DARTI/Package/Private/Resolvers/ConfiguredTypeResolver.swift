@@ -8,11 +8,11 @@
 import Foundation
 
 struct ConfiguredTypeResolver<C: TypeConfiguration>: TypeResolver {
-    var resolve: (C) -> Any
+    var resolve: (C, Initializer) -> Any
 
     // swift-format-ignore
     init<Concrete>(
-        _ resolve: @escaping (C) -> Concrete
+        _ resolve: @escaping (C, Initializer) -> Concrete
     ) {
         self.resolve = resolve
     }

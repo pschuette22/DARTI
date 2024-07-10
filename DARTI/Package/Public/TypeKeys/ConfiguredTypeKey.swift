@@ -12,7 +12,7 @@ public struct ConfiguredTypeKey<Abstract, Configuration>: TypeKey {
     private let typeConfig: Configuration.Type
     public var typeDescription: String { String(describing: type) }
     public let identifier: String?
-
+    
     public init(
         _ type: Abstract.Type,
         _ typeConfig: Configuration.Type,

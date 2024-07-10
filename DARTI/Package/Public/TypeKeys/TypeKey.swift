@@ -13,6 +13,7 @@ public enum TypeKeys { /* Empty for extension */ }
 
 public protocol TypeKey: Equatable, CustomStringConvertible {
     associatedtype Abstract
+
     var rawValue: RawTypeKey { get }
     var typeDescription: String { get }
 }

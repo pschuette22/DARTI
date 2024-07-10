@@ -8,7 +8,7 @@
 import Foundation
 
 public struct SimpleTypeKey<Abstract>: TypeKey {
-    public let type: Abstract.Type
+    private let type: Abstract.Type
     public var typeDescription: String { String(describing: type) }
     public let identifier: String?
 

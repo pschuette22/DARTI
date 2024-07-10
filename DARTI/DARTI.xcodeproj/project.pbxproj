@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		493D30272C3B367200CA130F /* InitializerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493D30262C3B367200CA130F /* InitializerTests.swift */; };
 		4945656B2BB9F7980056FC15 /* DARTI.docc in Sources */ = {isa = PBXBuildFile; fileRef = 4945656A2BB9F7980056FC15 /* DARTI.docc */; };
 		494565712BB9F7980056FC15 /* DARTI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 494565662BB9F7980056FC15 /* DARTI.framework */; };
 		494565762BB9F7980056FC15 /* DARTITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494565752BB9F7980056FC15 /* DARTITests.swift */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		493D30262C3B367200CA130F /* InitializerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitializerTests.swift; sourceTree = "<group>"; };
 		494565662BB9F7980056FC15 /* DARTI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DARTI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		494565692BB9F7980056FC15 /* DARTI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DARTI.h; sourceTree = "<group>"; };
 		4945656A2BB9F7980056FC15 /* DARTI.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = DARTI.docc; sourceTree = "<group>"; };
@@ -72,6 +74,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		493D30252C3B365C00CA130F /* Public */ = {
+			isa = PBXGroup;
+			children = (
+				493D30262C3B367200CA130F /* InitializerTests.swift */,
+			);
+			path = Public;
+			sourceTree = "<group>";
+		};
 		4945655C2BB9F7980056FC15 = {
 			isa = PBXGroup;
 			children = (
@@ -104,6 +114,7 @@
 		494565742BB9F7980056FC15 /* UnitTests */ = {
 			isa = PBXGroup;
 			children = (
+				493D30252C3B365C00CA130F /* Public */,
 				494565752BB9F7980056FC15 /* DARTITests.swift */,
 			);
 			path = UnitTests;
@@ -286,6 +297,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				493D30272C3B367200CA130F /* InitializerTests.swift in Sources */,
 				494565762BB9F7980056FC15 /* DARTITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
